@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div style="text-align:center" class="box">
+        <h2 class="text">Hello, World!</h2>
+        <button onclick="myFunction()">Click me</button>
+    </div>
+    <input type="file" id="mdfile" accept=".md" style="display:none;">
+<button id="mdfile-btn">select file</button>
+<div id="markdown-content"></div>
+    
+    <script src="test.js"></script>
+    <script>
+        function myFunction() {
+            alert("测试者，你好！");
+            alert("浩展正在学习部署markdown到webpages。");
+            alert("下面是markdown语法示例。");
+            alert("部分由AI生成，部分由人工编写。");
+        }
+    </script>
+
+</body>
+<style>
+    body {
+        background-color: rgb(66, 0, 0);
+        line-height: 1.5;
+        margin:5rem 0 5rem 0;
+        padding: 0;
+        align-items: center;
+        display:flex;
+        flex-direction: column;
+        gap:3rem;
+    }
+    .box{
+        width:20rem;
+        height:20rem;
+        border-radius:3rem;
+        justify-content:center;
+        background-color: rgb(148, 0, 0);
+        transition: 1500ms ease-in-out;
+        margin-bottom: 2rem;
+    }
+    .box:hover{
+        background-color: rgb(66, 0, 0);
+        transform:rotate(360deg);
+    }
+    .box h2{
+        font-size: 3rem;
+        color: transparent;
+        -webkit-text-stroke: 1px rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    button {
+        width:6rem;
+        height:6rem;
+        background-color: rgb(119, 0, 0);
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 100%;
+        cursor: pointer;
+        opacity:0.85
+    }
+    button:hover{
+        animation:xuanzhuan 2s ease-out infinite;
+    }
+    @keyframes xuanzhuan{
+        0%{
+            transform:rotate(0deg);
+        }
+        30%{
+            transform:rotate(180deg);
+            scale:1.5;
+            border-radius: 2rem;
+            background-color: rgb(66, 0, 0);
+        }
+        60%{
+            transform:rotate(240deg);
+            border-radius: 2rem;
+        }
+        100%{
+            transform:rotate(360deg);
+            border-radius: 100%;
+            scale:1;
+        }
+    }
+
+#markdown-content {
+    color: rgba(255, 255, 255,0.75);
+    background: rgba(148,0,0,0.3);
+    padding: 2rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-top: 2rem;
+    width: 61.8%;
+    box-shadow: 0 0 2px rgb(119, 0, 0);
+}
+#markdown-content h1, 
+#markdown-content h2, 
+#markdown-content h3 {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255);
+    margin-top: 0.5rem;
+}
+#markdown-content a {
+    color: #4ec9b0;
+    text-decoration: underline;
+}
+#markdown-content code {
+    background: #222;
+    color: #ffb86c;
+    padding: 0.2em 0.4em;
+    border-radius: 0.3em;
+}
+#markdown-content pre {
+    background: #222;
+    color: #ffb86c;
+    padding: 1em;
+    border-radius: 0.5em;
+    overflow-x: auto;
+}
+
+</style>
+</html>

@@ -24,7 +24,7 @@ function showList() {
 showList();
 
 var btn = document.createElement("button");
-btn.innerText = "Add Content";
+btn.innerText = "Add content";
 document.body.appendChild(btn);
 
 btn.addEventListener("click", function() {
@@ -77,4 +77,5 @@ mdfileBtn.style.fontSize = "0.8rem";
 mdfileBtn.style.cursor = "pointer";
 mdfileBtn.addEventListener('click', function() {
     mdfileInput.click();
+
 });
